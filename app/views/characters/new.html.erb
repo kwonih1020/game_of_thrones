@@ -1,0 +1,16 @@
+<h1> Add a New Character </h1>
+
+<%= form_for [@house, @character] do |f| %>
+
+  <h3><%= f.label :name %></h3>
+  <p><%= f.text_field :name %></p>
+
+  <h3><%= f.label :biography %></h3>
+  <p><%= f.text_area :biography %></p>
+
+  <h3><%= f.label :photo_url %></h3>
+  <p><%= f.text_field :photo_url %></p>
+
+  <p><%= f.submit class: "submit" %></p>
+
+<% end %>

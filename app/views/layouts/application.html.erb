@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GameOfThrones</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <a href="/"><img class="logo" src=https://upload.wikimedia.org/wikipedia/commons/b/b5/Logo_Game_of_Thrones.png></a>
+    <%= yield %>
+  </body>
+</html>

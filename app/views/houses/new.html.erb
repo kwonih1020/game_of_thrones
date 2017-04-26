@@ -1,0 +1,17 @@
+<h1>Add a New House</h1>
+
+<%= form_for @house do |f| %>
+  <p><%= f.label :name %></p>
+  <p><%= f.text_field :name %></p>
+
+  <p><%= f.label :words %></p>
+  <p><%= f.text_area :words %></p>
+
+  <p><%= f.label :seat %></p>
+  <p><%= f.text_field :seat %></p>
+
+  <p><%= f.label :crest_url %></p>
+  <p><%= f.text_field :crest_url %></p>
+
+  <p><%= f.submit class: "submit" %></p>
+<% end %>

@@ -1,0 +1,11 @@
+<h1> <a href = "/houses/ <%= @character.house_id %>">House: <%= House.find(@character.house_id).name %> </a></h1>
+
+<h2> <%= @character.name %> </h2>
+
+<p> <%= image_tag @character.photo_url %> </p>
+
+<h3> Biography: </h3>
+<p> <%= @character.biography %> </p>
+
+<p> <%= link_to "Edit Character", edit_house_character_path(@house, @character) %> </p>
+<p> <%= link_to "Delete Character", house_character_path(@house, @character), method: :delete %> </p>
